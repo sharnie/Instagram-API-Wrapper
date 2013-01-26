@@ -14,6 +14,10 @@ Scope can be:
 * `relationships` To follow and unfollow users on a user’s behalf
 * `likes` To like and unlike items on a user’s behalf
 
+## Requirements
+* jQuery (For ajax calls)
+* Modernizr (To check if local storage is supported)
+
 ## How to instantiate
 ```javascript
 var InstagramWrapperInstance = new Instagram(
