@@ -1,5 +1,5 @@
 # Instagram API wrapper
-I needed to do some heavy Instagram in my last project and decided to create an Instagram API wrapper for ease of use.
+I needed to do some heavy Instagram integration in my last project and decided to create an Instagram API wrapper for ease of use.
 It saves your oAuth token for internal use and makes sure all Instagram's functions are accessinble in the same simple async way.
 
 For some basics see: 
@@ -23,7 +23,7 @@ Scope can be:
 var InstagramWrapperInstance = new Instagram(
 {
 	client_id: '<your_instagram_client_id>'
-	redirect_uri: '<should_be_the_same_as_in_instagram_client_config'
+	redirect_uri: '<should_be_the_same_as_in_instagram_client_config>'
 	scope: 'basic'
 	response_type: 'token'
 });
@@ -32,8 +32,7 @@ var InstagramWrapperInstance = new Instagram(
 ## How to use
 ```javascript
 
-var token = InstagramWrapperInstance.getToken(),
-	requestOptions = {};
+var token = InstagramWrapperInstance.getToken();
 
 if(token)
 {
